@@ -1,0 +1,89 @@
+Bahria University
+Karachi Campus
+
+ 
+LAB EXPERIMENT NO.
+01
+LIST OF TASKS
+
+TASK NO	OBJECTIVE
+1.		Get Order id, Product id, Unit price from Order Details.
+2.		Find Title of employee Nancy.
+3.		Display data of all employees those working as Sales Representative from London
+4.		Display product name whose unit price are greater than 90$
+5.		Write a query to get current Product list (Product ID and name).
+6.		Fetch data of customers where country is "Germany" AND city must be "Berlin" OR "München" (use parenthesis to form complex expressions)
+7.		Fetch data of customers from all countries except Germany and USA
+8.		Fetch Discontinued products who’s price is greater than 20
+	
+
+Submitted On: 
+01-03-2023
+(Date: DD/MM/YY)
+
+
+
+
+
+
+
+Task # 01:
+Solution: 
+select OrderID,ProductID,UnitPrice from [Order Details]
+Output:
+
+ 
+Task # 02:
+Solution: 
+select Title from Employees where FirstName ='Nancy'
+Output:
+
+ 
+
+
+
+
+Task # 03:
+Solution: 
+select * from Employees where City ='London' and Title = 'Sales Representative'
+Output:
+
+ 
+
+Task # 04:
+Solution: 
+select ProductName from Products where UnitPrice > '90'
+Output:
+
+ 
+
+
+
+
+Task # 05:
+Solution: 
+select ProductID,ProductName from Products where Discontinued ='0'
+Output:
+
+ 
+
+Task # 06:
+Solution: 
+select * from  Customers where Country = 'Germany' and (City = 'Berlin' or City = 'München')
+Output:
+
+ 
+Task # 07:
+Solution: 
+select * from  Customers where (Country <> 'Germany') and (Country <> 'USA')
+Output:
+
+ 
+
+Task # 08:
+Solution: 
+select * from Products where (Discontinued ='1' and UnitPrice > 20)
+Output:
+
+ 
+
